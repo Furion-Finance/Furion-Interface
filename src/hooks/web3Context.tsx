@@ -134,14 +134,18 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
   );
 
   /**
-   * throws an error if networkID is not 1 (mainnet) or 4 (rinkeby)
+   * throws an error if networkID is not 1 (mainnet) or 4 (rinkeby) or 1337(Ganache)
    */
   const _checkNetwork = (otherChainID: number): Boolean => {
     if (chainID !== otherChainID) {
       console.warn("You are switching networks");
-      if (otherChainID === 1 || otherChainID === 4) {
+      if (otherChainID === 1 || otherChainID === 4 || otherChainID === 1337) {
         setChainID(otherChainID);
-        otherChainID === 1 ? setUri(getMainnetURI()) : setUri(getTestnetURI());
+        if(otherChainID === 1){
+          setUri(getMainnetURI());
+        }else if(otherChainID === 4){
+          setUri(getTestnetURI())
+        }
         return true;
       }
       return false;
@@ -167,7 +171,7 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
     const connectedAddress = await connectedProvider.getSigner().getAddress();
     const validNetwork = _checkNetwork(chainId);
     if (!validNetwork) {
-      console.error("Wrong network, please switch to mainnet");
+      console.error("Wrong network, please switch to valid net choice");
       return;
     }
     // Save everything after we've validated the right network.

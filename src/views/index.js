@@ -1,6 +1,7 @@
-export { default as Bond } from "./Bond/Bond";
-export { default as ChooseBond } from "./ChooseBond/ChooseBond";
-export { default as Stake } from "./Stake/Stake";
-export { default as Dashboard } from "./Dashboard/Dashboard";
-export { default as PoolTogether } from "./33Together/33Together.jsx";
-export { default as TreasuryDashboard } from "./TreasuryDashboard/TreasuryDashboard";
+export { default as Loan } from "./Loan/Loan.jsx";
+export { default as LiquidityPool } from "./LiquidityPool/LiquidityPool.jsx";
+export { default as LendDetail} from "./Detail/LendDetail.jsx";
+export {default as BorrowDetail} from "./Detail/BorrowDetail.jsx";
+export { default as StakeDetail } from "./Detail/StakeDetail.jsx";
+export { default as UnstakeDetail } from "./Detail/UnstakeDetail.jsx";
+export {default as UnlockDetail} from "./Detail/UnlockDetail.jsx";

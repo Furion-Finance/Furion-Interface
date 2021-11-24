@@ -30,6 +30,8 @@
   align-items: center;
   text-decoration: none;
   margin: 30px 0 10px 0;
+  margin-top: -10%;
+  margin-bottom: -15%;
   .branding-header-icon {
     width: 50px;
     display: block;
@@ -37,6 +39,9 @@
   }
   .wallet-link {
     margin: 10px;
+    text-align: center;
+    margin-left: -10%;
+    margin-top: -5%;
   }
 }
 

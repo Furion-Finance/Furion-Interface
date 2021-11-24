@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Web3ContextProvider } from "./hooks/web3Context";
 
 import App from "./App";
-import store from "./store";
+import {store} from "./redux/store";
 
 export default class Root extends Component {
   constructor(props) {

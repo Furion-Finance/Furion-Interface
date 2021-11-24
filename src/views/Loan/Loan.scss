@@ -1,0 +1,250 @@
+#loan-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .rebase-timer {
+    margin: 0 !important;
+    line-height: 110% !important;
+  }
+
+  .loan-tab-buttons {
+    margin-bottom: 0.25rem;
+  }
+
+  .loan-table-panel,
+  .loan-tab-panel > div.MuiBox-root {
+    width: 100%;
+    padding: 0;
+  }
+  .mobile .loan-tab-panel,
+  .mobile .loan-tab-panel > div.MuiBox-root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .ohm-card .header {
+    min-height: 3em;
+  }
+  .ohm-card.secondary .card-header {
+    min-height: 33px !important;
+    height: 20px;
+  }
+  .loan-note {
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+.mark{
+  background-color: #35ee66;
+}
+
+.migrate-sohm-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  color: #f08080;
+  line-height: 30px;
+  svg {
+    margin-right: 8px;
+    color: inherit;
+  }
+}
+
+.migrate-sohm-button.complete {
+  color: #35ee66 !important;
+}
+
+.loan-top-metrics {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin-top: 10px;
+  h5 {
+    font-weight: 400;
+  }
+  h4 {
+    font-weight: 500;
+  }
+  .loan-apy,
+  .loan-tvl,
+  .loan-index {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-overflow: ellipsis;
+    // white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.mobile .loan-top-metrics {
+  .loan-apy,
+  .loan-tvl,
+  .loan-index {
+    align-items: flex-start;
+  }
+}
+
+.ohm-logo-tiny {
+  height: 14px;
+  width: 14px;
+  vertical-align: middle;
+  background-color: transparent;
+  align-self: center;
+  justify-self: center;
+}
+
+.logo-holder {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  background: none;
+  border: 0 !important;
+  border-radius: inherit;
+  color: #555;
+}
+
+.loan-action-area {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.loan-action-row {
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.mobile .loan-action-row {
+  justify-content: center;
+}
+
+.loan-action-row [role="tabpanel"] {
+  width: 99%;
+  min-width: 162px;
+  max-width: 220px;
+  margin: 5px;
+}
+
+.mobile .loan-action-row {
+  flex-direction: column;
+  [role="tabpanel"] {
+    max-width: 100%;
+    width: 100% !important;
+  }
+}
+
+.ohm-input {
+  max-width: 542px;
+  width: 100%;
+  margin: 5px !important;
+}
+
+.loan-button {
+  align-self: center;
+  width: 100%;
+  min-width: 163px !important;
+  max-width: 542px !important;
+  height: 43px !important;
+}
+
+.mobile .loan-button {
+  width: 100% !important;
+  max-width: 542px;
+  align-self: center;
+  justify-self: center;
+}
+
+.staking-area {
+  margin: 13px 10px 13px 10px;
+}
+
+.loan-lp-button {
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  svg {
+    margin-left: 4px;
+    vertical-align: middle;
+    font-size: 1.1em;
+  }
+  &:hover {
+    svg {
+      color: inherit;
+    }
+  }
+}
+
+.loan-user-data {
+  justify-content: center;
+  margin: auto;
+  padding: 0 5px;
+}
+
+.tablet .loan-pool,
+.mobile .loan-pool {
+  .pool-card-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .ohm-pairs p {
+      margin-bottom: 0 !important;
+    }
+  }
+  .tab {
+    font-size: 30;
+  }
+
+  .pool-data {
+    margin-top: 15px;
+    width: 100%;
+    .pool-data-row {
+      display: flex;
+      justify-content: space-between;
+      line-height: 225%;
+    }
+  }
+  .loan-lp-button {
+    margin-top: 10px;
+    svg {
+      margin-left: 10px !important;
+    }
+  }
+}
+
+.loan-wallet-notification {
+  text-align: center;
+  .wallet-menu {
+    text-align: center;
+    .connect-button {
+      max-width: 300px !important;
+      min-width: 240px !important;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.true{
+  border-width: 0 !important;
+}
+// .nft_display{
+//   color: aquamarine;
+// }

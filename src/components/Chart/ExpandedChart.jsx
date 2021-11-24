@@ -2,7 +2,6 @@ import InfoTooltip from "../InfoTooltip/InfoTooltip";
 import { Box, Backdrop, Modal, Paper, SvgIcon, Typography, Fade, useMediaQuery } from "@material-ui/core";
 import { ReactComponent as XIcon } from "../../assets/icons/x.svg";
 import { ResponsiveContainer } from "recharts";
-import { style } from "@material-ui/system";
 
 function ExpandedChart({
   open,
