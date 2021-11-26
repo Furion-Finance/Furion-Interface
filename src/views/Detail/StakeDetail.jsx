@@ -10,6 +10,8 @@ function createData(account, operation_type, operation_date, fUSD_amount) {
   return { account, operation_type, operation_date, fUSD_amount};
 }
 
+const borderstyle={border: "0px dashed blue", width: "100%" }; //used for debugging Grid Edges, change for 1px to take effect
+
 const rows = [
   createData('0x000...001', "Injection", "1st Jan 2021", 100),
   createData('0x000...002', "Unlock", "2nd Jan 2021", 200),
@@ -45,22 +47,20 @@ function StakeDetail({ nft_project_name, nft_project_address, token_id, img_url,
       <Zoom in={true} onEntered={() => setZoomed(true)}>
         <Paper className={`ohm-card`}>
           <Grid container direction="column" spacing={0.5}>
-
             <Grid item>
               <div className="card-header">
                 <Typography variant="h2">Detail</Typography>
               </div>
             </Grid>
-
             <Grid item>
               <Box sx={{ flexGrow: 1 }}>
-                <Grid container spacing={2}>
+                <Grid container spacing={2} style={borderstyle}>
                   <Grid item xs={4}>
                     <div class='img_div'>
                       <img src={img_url} layout="fill" objectFit="cover" />
                     </div>
                   </Grid>
-                  <Grid item xs={8}>
+                  <Grid item xs={8}  style={borderstyle}>
                     <Grid container spacing={0.5} direction="column" id="new">
                       <Grid item>
                         <PriceIntro
@@ -69,7 +69,7 @@ function StakeDetail({ nft_project_name, nft_project_address, token_id, img_url,
                           token_id={token_id}
                         />
                       </Grid>
-                      <Grid item alignItems="center">
+                      <Grid item alignItems="center"  style={borderstyle}>
                         <Grid container spacing={2} direction="row" >
                         <Grid item xs={4}><Button variant="contained" color="primary" size="medium" id="deposit"
                           onClick={()=>{
